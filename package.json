@@ -1,0 +1,35 @@
+{
+  "name": "node-regexify",
+  "version": "0.0.0",
+  "description": "Regex everything!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemanth/node-regexify.git"
+  },
+  "keywords": [
+    "regex",
+    "util"
+  ],
+  "contributors": [
+    "hemanth.hm <hemanth.hm@gmail.com> (http://www.h3manth.com)"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemanth/node-regexify/issues"
+  },
+  "homepage": "https://github.com/hemanth/node-regexify",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "is-regex": "^1.0.3",
+    "is-string": "^1.0.4"
+  }
+}
