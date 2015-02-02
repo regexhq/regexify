@@ -27,9 +27,5 @@
   "homepage": "https://github.com/hemanth/node-regexify",
   "devDependencies": {
     "mocha": "^2.1.0"
-  },
-  "dependencies": {
-    "is-regex": "^1.0.3",
-    "is-string": "^1.0.4"
   }
 }

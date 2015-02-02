@@ -2,8 +2,7 @@
 
 'use strict';
 
-var isString = require('is-string'),
-  isRegExp = require('is-regex');
+var util = require('util');
 
 function regexify(val){
   if (!val) {
@@ -12,10 +11,10 @@ function regexify(val){
   if (Array.isArray(val)) {
     val = val.join('|');
   }
-  if (isString(val)) {
+  if (util.isString(val)) {
     return new RegExp(val);
   }
-  if (isRegExp(val)) {
+  if (util.isRegExp(val)) {
     return val;
   }
   throw new TypeError('illegal type: '+ val +' for regexify');
