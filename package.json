@@ -1,5 +1,5 @@
 {
-  "name": "node-regexify",
+  "name": "regexify",
   "version": "0.0.0",
   "description": "Regex everything!",
   "main": "index.js",
