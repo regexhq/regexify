@@ -4,6 +4,10 @@
 
 var util = require('util');
 
+var isString = function (val) {
+  return (Object.prototype.toString.call(val) === '[object String]');
+};
+
 function regexify(val){
   if (!val) {
     return new RegExp(/.^/);
@@ -11,7 +15,7 @@ function regexify(val){
   if (Array.isArray(val)) {
     val = val.join('|');
   }
-  if (util.isString(val)) {
+  if (isString(val)) {
     return new RegExp(val);
   }
   if (util.isRegExp(val)) {
