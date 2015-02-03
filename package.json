@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hemanth/node-regexify.git"
+    "url": "https://github.com/hemanth/regexify.git"
   },
   "keywords": [
     "regex",
@@ -22,9 +22,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hemanth/node-regexify/issues"
+    "url": "https://github.com/hemanth/regexify/issues"
   },
-  "homepage": "https://github.com/hemanth/node-regexify",
+  "homepage": "https://github.com/hemanth/regexify",
   "devDependencies": {
     "mocha": "^2.1.0"
   }
