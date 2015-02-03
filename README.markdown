@@ -1,6 +1,6 @@
 # node-regexify
 
-[![Build Status](https://travis-ci.org/hemanth/regexify.svg)](https://travis-ci.org/hemanth/regexify) [![npm version](https://badge.fury.io/js/regexify.svg)](http://badge.fury.io/js/regexify)
+[![Build Status](https://travis-ci.org/regexps/regexify.svg)](https://travis-ci.org/regexps/regexify) [![npm version](https://badge.fury.io/js/regexify.svg)](http://badge.fury.io/js/regexify)
 > Regex everything! Well...almost ;)
 
 ## Installation
