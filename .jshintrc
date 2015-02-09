@@ -11,10 +11,6 @@
     "noarg": true,
     "undef": true,
     "strict": false,
-    "trailing": true,
-    "smarttabs": true,
-    "indent": 2,
-    "white": false,
     "quotmark": "single",
     "laxbreak": true,
     "globals"   : {
