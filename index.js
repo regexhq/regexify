@@ -2,11 +2,13 @@
 
 'use strict';
 
-var util = require('util');
-var escapeStringRegexp = require('escape-regexp');
-var isString = function (val) {
-  return (Object.prototype.toString.call(val) === '[object String]');
-};
+var util = require('util')
+  ,isString = function (val) {
+      return (Object.prototype.toString.call(val) === '[object String]');
+  }
+  ,escapeStringRegexp = function(str){
+      return String(str).replace(/([.*+?=^!:${}()|[\]\/\\])/g, '\\$1');
+  };
 
 function regexify(val){
   if (!val) {
