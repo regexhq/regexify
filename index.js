@@ -3,7 +3,7 @@
 'use strict';
 
 var util = require('util');
-
+var escapeStringRegexp = require('escape-regexp');
 var isString = function (val) {
   return (Object.prototype.toString.call(val) === '[object String]');
 };
@@ -13,10 +13,13 @@ function regexify(val){
     return new RegExp(/.^/);
   }
   if (Array.isArray(val)) {
-    val = val.join('|');
+    val = val.map(function(val){
+            return escapeStringRegexp(val)
+          }).join('|');
+    return new RegExp(val);
   }
   if (isString(val)) {
-    return new RegExp(val);
+    return new RegExp(escapeStringRegexp(val));
   }
   if (util.isRegExp(val)) {
     return val;

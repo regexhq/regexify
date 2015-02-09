@@ -18,6 +18,8 @@ assert.deepEqual(regexify(false), /.^/);
 assert.deepEqual(regexify(null), /.^/);
 assert.deepEqual(regexify(''), /.^/);
 assert.deepEqual(regexify(['foo', 'bar']), /foo|bar/);
+assert.deepEqual(regexify(['foo', './bar']), /foo|\.\/bar/);                                                                        
+assert.deepEqual(regexify('./foobar'),/\.\/foobar/); 
 assert.deepEqual(regexify('foobar'), /foobar/);
 assert.deepEqual(regexify(/foobar/), /foobar/);
 ```
