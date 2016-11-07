@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/hemanth/regexify",
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^3.1.2"
   }
 }
